@@ -1,4 +1,75 @@
 .App {
   text-align: center;
+  width: 100%;
+}
+.App-logo {
+  height: 200px;
 }
 
+.main-menu {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 2%;
+}
+.menu-items {
+  float: left;
+  width: 33%;
+}
+.menu-items a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: #cb35a0;
+  font-weight: bold;
+}
+.Body {
+  width: 100%;
+  overflow: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.content-item {
+  background-color: transparent;
+  height: auto;
+  border: 2px solid #222;
+  padding: 1%;
+}
+.content-item h1 {
+  color: #cb35a0;
+}
+.content-item p {
+  color: black;
+}
+.content-item-img {
+  width: 100%;
+}
+.main-nav {
+  display: block;
+}
+.Footer {
+  width: 100%;
+  overflow: auto;
+}
+.footer-content {
+  background-color: #222;
+  height: 50px;
+  color: white;
+  padding: 2.5%;
+}
+.Footer a {
+  color: white;
+}
+.Footer a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-item {
+    float: left;
+    width: 28%;
+    margin: 1.5%;
+}
+}
