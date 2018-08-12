@@ -1,4 +1,179 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 .App {
-  text-align: center;
+  text-align: left;
+  overflow: auto;
 }
 
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: left;
+    overflow: auto;
+}
+.menu {
+    margin: 0;
+    background-color: #555;
+    height: auto;
+    overflow: auto;
+    float: left;
+    width: 100%;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    line-height: auto;
+    font-size: 18px;
+    background-color: #222;
+    width: 10%;
+    text-align: center;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+.Body {
+  width: 100%;
+  float: left;
+  background-color: #555;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  color: #222;
+}
+.Body h1 {
+  margin: 1%;
+}
+.main-nav {
+  display: block;
+}
+.Footer {
+  width: 100%;
+  overflow: auto;
+}
+.footer-content {
+  background-color: #222;
+  height: 50px;
+  color: white;
+  padding: 2.5%;
+  text-align: center;
+}
+.Footer a {
+  color: white;
+}
+.Footer a:hover {
+  font-weight: bold;
+}
+.siteName {
+  float: left;
+  width: 100%;
+  background-color: #222;
+  overflow: auto;
+  color: white;
+  padding: 1%;
+}
+.App-name {
+  float: left;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+.App-logo {
+  float: left;
+  width: 100%;
+  background-color: transparent;
+  height: 100px;
+}
+#call-to-action {
+  background-color: white;
+  float: left;
+  width: 95%;
+  text-align: center;
+  height: auto;
+  margin: 2.5%;
+}
+form {
+  padding: 2.5%;
+}
+input {
+  margin: 1%;
+  padding: 1%;
+}
+.action-button {
+  margin: 1%;
+  padding: 1%;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+}
+.summary {
+  width: 100%;
+  float: left;
+  overflow: auto;
+}
+#main-content {
+  width: 100%;
+  float: left;
+  overflow: auto;
+}
+.content-block {
+  width: 90%;
+  float: left;
+  overflow: auto;
+  background-color: white;
+  height: auto;
+  padding: 2.5%;
+  margin: 2.5%;
+}
+.content-item-img {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .content-block {
+    width: 40%;
+  }
+}
+
+/*menu styles*/
+
+@media only screen and (max-width: 600px) {
+  label {
+      display: block;
+      cursor: pointer;
+      background-color: #555;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      color: white;
+      text-align: center;
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .menu a {
+      display: block;
+      margin: 1%;
+      padding: 1%;
+      width: 97%;
+   
+  }
+  #toggle:checked + .menu {
+      display: block;
+  }
+}
