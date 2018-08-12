@@ -5,23 +5,18 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-      		<div className="logo">
+      		<div className="siteName">
           		<img src={logo} className="App-logo" alt="logo" />
+              <h1 className="App-name">The Red Sunflower</h1>
       		</div>
-      		<h1>The Red Sunflower</h1>
       		<nav className= "main-nav">
-      			<ul className="main-menu">
-      				<li className="menu-items">
-      					<a href="#">Home</a>
-      				</li>
-      				<li className="menu-items">
-      					<a href="#">About</a>
-      				</li>
-      				<li className="menu-items">
-      					<a href="#">Contact</a>
-      				</li>      				     				
-
-      			</ul>
+      		    <label for="toggle">Menu &#9776;</label>
+              <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
       		</nav>
       </div>
     );
